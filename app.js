@@ -26,6 +26,10 @@ app.use(function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+app.get('*', function(req, res) {
+  res.sendFile('index.html', {root: './public'});
+});
+
 app.use('/', routes);
 app.use('/users', users);
 

@@ -17,8 +17,11 @@ h2 {
 	font-size: 20pt;
 }
 
-.navbar{
-	color: 3A535C;
+.thumb{
+	margin-top: 8px;
+	width: 150px;
+	height: 120px;
+
 }
 
 .jumbotron{
@@ -35,20 +38,70 @@ h2 {
 	text-align: center;
 
 }
-.panelP{
-	text-align: bottom;
-}
 
 .wedgePanel{
 	margin-left: 45px;
 }
+.panel-primary{
+	border-color: #E3A348;
+}
+#orange{
+	background-color: #E3A348;
+	border-color: #E3A348;
+	width: auto;
+}
 
-.panel{
+.panelO{
 
 	background-color: #E3A348;
-	height: 150px;
+	height: 160px;
 
 }
+
+.panelDark{
+
+	background-color: #1A1A1A;
+	height: 160px;
+	color: white;
+
+}
+.littlePadding{
+	padding-top: 30px;
+	text-align: center;
+}
+
 .padded{
 	padding-top: 100px;
 }
+
+.panelImage{
+	max-height: 700px;
+	max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
