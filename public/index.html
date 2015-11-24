@@ -8,8 +8,8 @@
     <title>Landon Dare</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +19,9 @@
     <![endif]-->
     <base href="/">
   </head>
-  <body ng-controller="bodyController">
+  <body ng-controller="bodyController" class ="padded">
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header" >
@@ -91,25 +91,34 @@
             });
 
             $stateProvider
+            .state('per', {
+              url: '/personal/',
+              controller: 'bodyController',
+              templateUrl: 'partials/personal.html'
+            });
+
+
+            $stateProvider
             .state('pro', {
               url: '/Professional',
               controller: 'bodyController',
               templateUrl: 'partials/Professional.html'
-            });
-
-            $stateProvider
-            .state('per', {
-              url: '/personal',
-              controller: 'bodyController',
-              templateUrl: 'partials/personal.html'
-            });
+            }).state("pro.fall", {
+                url: "/CCEWFall",
+                templateUrl: "/partials/CCEWFall.html"
+            }).state("pro.spring", {
+                url: "/CCEWSpring",
+                templateUrl: "/partials/CCEWSpring.html"
+            }).state("pro.paycom", {
+                url: "/paycom",
+                templateUrl: "/partials/paycom.html"
+            })
 
 
       }]);
 
       angular.module('app').controller("bodyController", 
         ['$scope' , '$http',  '$state', function($scope, $http, $state){
-          $scope.test = "hello";
           $scope.clickBio = function(){
             console.log("clicked bio")
             $state.go('bio')

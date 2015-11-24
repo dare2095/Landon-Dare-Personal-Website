@@ -1,4 +1,18 @@
 
 <section id="professional">
-	<h1>I AM A PROFESSIONAL</h1>
+	<h1>Professional Work</h1>
+	<div class="row">
+
+		<div class = "col-md-2">
+			<ul class="nav nav-pills nav-stacked panel">
+			  <li><a ui-sref-active="activeO" class="aPill"><h5>Overview</h5></a></li>
+			  <li><a ui-sref-active="activeO" ui-sref="pro.fall" class="aPill"><h5>CCEW Fall 2014</h5></a></li>
+			  <li><a ui-sref-active="activeO" ui-sref="pro.spring" class="aPill"><h5>CCEW Spring 2015</h5></a></li>
+			  <li><a ui-sref-active="activeO" ui-sref="pro.paycom" class="aPill"><h5>Paycom</h5></a></li>
+			</ul>
+		</div>
+		<div class="col-md-10 panel panel-primary white">
+			<div ui-view></div>
+		</div>
+	</div>
 </section>

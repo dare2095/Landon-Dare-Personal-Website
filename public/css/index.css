@@ -24,15 +24,6 @@ h2 {
 
 }
 
-.jumbotron{
-	background-size: contain;
-	/* background-image: url("../img/shapes.jpg"); */
-	background-color: #EBC691;
-	/*      	#E3A348 				*/
-	margin-top: 20px;
-	padding-top: 20px
-}
-
 .row{
 	padding-top: 10px;
 	text-align: center;
@@ -74,29 +65,65 @@ h2 {
 	padding-top: 100px;
 }
 
+.spaced{
+	margin-top: 120px;
+}
+
 .panelImage{
 	max-height: 700px;
 	max-width: 500px;
 }
 
+.well{
+	text-align: center;
+}
 
+.bottom{
+	background-color: white;
+}
 
+.white{
+	background-color: white;
+}
 
+.sideImage{
+	max-height: 400px;
+	max-width: 300px;
+	padding-bottom: 50px;
+}
 
+.lefty{
+	text-indent: 40px;
+	text-align: left;
+}
 
+.nav-pills{
+	color: #1A1A1A;
+	background-color: white;
+	position: fixed;
+	width: 170px;
+	border-color: #E3A348;
+}
 
+.activeO{
+	background-color: #E3A348;
+	color: white;
+}
 
+.aPill{
+	color: #1A1A1A;
+	outline: none;
+}
 
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover {
+	color: #1A1A1A;
+	background-color: #E3A348;
+}
 
-
-
-
-
-
-
-
-
-
+.banner{
+	max-height: 250px
+}
 
 
 
