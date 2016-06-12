@@ -1,7 +1,7 @@
 body {
 
 	background-image: url("../img/background2.jpg");
-	/* background-color: oldlace; */
+	background-color: #1A1A1A;
 	background-attachment: fixed;
 	background-size: cover;
   	background-repeat: no-repeat;
@@ -19,8 +19,8 @@ h2 {
 
 .thumb{
 	margin-top: 8px;
-	width: 150px;
-	height: 120px;
+	/*width: 150px;
+	height: 120px;*/
 
 }
 
@@ -37,22 +37,24 @@ h2 {
 	border-color: #E3A348;
 }
 #orange{
-	background-color: #E3A348;
-	border-color: #E3A348;
+	/* #f39c12*/
+	/* original #E3A348 */
+	/* #E0B467 */
+	background-color: #E0B467;
+	border-color: #E0B467;
 	width: auto;
 }
 
 .panelO{
 
-	background-color: #E3A348;
-	height: 160px;
+	background-color: #E0B467;
+
 
 }
 
 .panelDark{
 
 	background-color: #1A1A1A;
-	height: 160px;
 	color: white;
 
 }
@@ -76,6 +78,7 @@ h2 {
 
 .well{
 	text-align: center;
+	margin-top: 100px;
 }
 
 .bottom{
@@ -125,6 +128,11 @@ h2 {
 	max-height: 250px
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 
 
