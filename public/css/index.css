@@ -34,7 +34,8 @@ h2 {
 	margin-left: 45px;
 }
 .panel-primary{
-	border-color: #E3A348;
+	/* border-color: #E3A348 ; */
+	border-color: white;
 }
 #orange{
 	/* #f39c12*/
@@ -126,6 +127,11 @@ h2 {
 
 .banner{
 	max-height: 250px
+}
+
+.middleAllign{
+	display: table-cell; height: 200px; 
+	vertical-align: middle; 
 }
 
 img {
