@@ -102,25 +102,30 @@
               url: '/Professional',
               controller: 'bodyController',
               templateUrl: 'partials/Professional.html'
-            }).state("pro.fall", {
-                url: "/CCEWFall",
-                templateUrl: "/partials/CCEWFall.html"
-            }).state("pro.spring", {
-                url: "/CCEWSpring",
-                templateUrl: "/partials/CCEWSpring.html"
+            }).state("pro.ccew", {
+                url: "/CCEW",
+                templateUrl: "/partials/CCEW.html"
+            }).state("pro.ni", {
+                url: "/NationalInstruments",
+                templateUrl: "/partials/nationalInstruments.html"
             }).state("pro.paycom", {
                 url: "/paycom",
                 templateUrl: "/partials/paycom.html"
             }).state("pro.home", {
                 url: '',
-                templateUrl: "/partials/CCEWFall.html"
+                templateUrl: "/partials/nationalInstruments.html"
             })
 
 
       }]);
 
       angular.module('app').controller("bodyController", 
-        ['$scope' , '$http',  '$state', function($scope, $http, $state){
+        ['$scope' , '$rootScope', '$http',  '$state', function($scope, $rootScope, $http, $state){
+
+          $rootScope.$on('$stateChangeSuccess', function() {
+             document.body.scrollTop = document.documentElement.scrollTop = 0;
+          });
+
           $scope.clickBio = function(){
             console.log("clicked bio")
             $state.go('bio')
