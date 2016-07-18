@@ -140,9 +140,15 @@ img {
     width: auto\9; /* ie8 */
 }
 
+.left{
+	text-align: left;
+}
 
-
-
+.smallImage{
+	max-width: 100px;
+	width: auto;
+	height: auto;
+}
 
 
 
